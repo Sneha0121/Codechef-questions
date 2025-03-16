@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int n;
+	cin>>n;
+	int a[n];
+	int lucky_soldier = 0;
+	int unlucky_soldier = 0;
+	for(int i=0; i<n;i++){
+	    cin>>a[i];
+	    if(a[i]%2==0) lucky_soldier++;
+	    else unlucky_soldier++;
+	}
+    if(lucky_soldier>unlucky_soldier) cout<<"READY FOR BATTLE"<<endl;
+    else cout<<"NOT READY"<<endl;
+}
