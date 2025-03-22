@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int a,b,c,d;
+	    cin>>a>>b>>c>>d;
+	    int selection_1,selection_2;
+	    
+	    if(a>=b) selection_1=a;
+	    else selection_1=b;
+	    
+	    if(c>=d) selection_2=c;
+	    else selection_2=d;
+	    
+	    cout<<selection_1+selection_2<<endl;
+	    }
+
+}
