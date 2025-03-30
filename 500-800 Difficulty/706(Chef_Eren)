@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n,a,b;
+	    cin>>n>>a>>b;
+	    int even_episodes=n/2;
+	    int odd_episodes=(n+1)/2;
+	    int total_min= (even_episodes*a)+(odd_episodes*b);
+	    cout<<total_min<<endl;
+    }
+}
