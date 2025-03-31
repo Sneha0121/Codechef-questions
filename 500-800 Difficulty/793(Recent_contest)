@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n;
+	    cin>>n;
+	    string code[n];
+	    int count_START38 = 0;
+	    int count_LTIME38 = 0;
+	    for(int i = 0; i<n; i++){
+	        cin>>code[i];
+	        if(code[i] == "START38") count_START38 +=1;
+	        else count_LTIME38 +=1;
+	    }
+	    cout<<count_START38<< " "<< count_LTIME38<<endl;
+	}
+
+}
