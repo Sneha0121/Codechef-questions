@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int x,y;
+	    cin>>x>>y;
+	    int A_before_B = (500 - 2*x) + (1000 - 4*(x+y));
+	    int B_before_A = (500 - 2*(x+y)) + (1000 - 4*y);
+        cout<< max(A_before_B, B_before_A)<<endl;
+	}
+
+}
