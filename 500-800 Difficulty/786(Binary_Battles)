@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t; 
+	cin>>t;
+	while(t--){
+	    int n,a,b;
+	    cin>>n>>a>>b;
+	    int round_time = log2(n)*a;
+	    int break_time = (log2(n) -1)*b;
+	    cout<<round_time+break_time<<endl;
+	}
+
+}
