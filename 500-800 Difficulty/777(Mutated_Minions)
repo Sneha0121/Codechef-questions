@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n,k;
+	    cin>>n>>k;
+	    int minions[n];
+	    int count=0;
+	    
+	    for(int i=0;i<n;i++){
+	        cin>>minions[i];
+	        minions[i]= minions[i]+k;
+	        if(minions[i]%7==0) count++;
+	    }
+	    cout<<count<<endl;
+	    }
+
+}
