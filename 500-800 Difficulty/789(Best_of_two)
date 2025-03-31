@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int A1, A2, A3, B1, B2, B3;
+	    cin>>A1>>A2>>A3>>B1>>B2>>B3;
+	    int lowest_A, lowest_B;
+	    
+	    if(A1<=A2 && A1<=A3) lowest_A = A1;
+	    else if(A2<=A1 && A2<=A3) lowest_A = A2;
+	    else lowest_A = A3;
+	    
+	    if(B1<=B2 && B1<=B3) lowest_B = B1;
+	    else if(B2<=B1 && B2<=B3) lowest_B = B2;
+	    else lowest_B = B3;
+	    
+	    int score_A = A1+A2+A3 - lowest_A;
+	    int score_b = B1+B2+B3 - lowest_B;
+	    
+	    if(score_A>score_b) cout<<"Alice\n";
+	    else if(score_A<score_b) cout<<"Bob\n";
+	    else cout<<"Tie\n";
+	}
+
+}
