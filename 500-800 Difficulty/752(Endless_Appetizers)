@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int x,y,r, total_sticks_eaten;
+	    cin>>x>>y>>r;
+	    total_sticks_eaten= x+r/30;
+	    if (total_sticks_eaten%y!=0) cout<<total_sticks_eaten/y +1<<endl;
+	    else cout<<total_sticks_eaten/y<<endl;
+	}
+
+}
