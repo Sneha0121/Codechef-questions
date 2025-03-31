@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    double x,y; //taking in double(double is float with precision) data type
+	    cin>>x>>y;
+	    int floor_chef = ceil(x/10);
+	    int floor_chefina = ceil(y/10);
+	    cout<< abs(floor_chefina - floor_chef)<<endl;
+	}
+
+}
